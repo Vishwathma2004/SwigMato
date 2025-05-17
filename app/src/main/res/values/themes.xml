@@ -1,9 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Food_Ordering_App" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+    <style name="Theme.Food_Ordering_App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Force light theme -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">#000000</item>
 
-    <style name="Theme.Food_Ordering_App" parent="Base.Theme.Food_Ordering_App" />
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/material_dynamic_primary0</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
 </resources>
