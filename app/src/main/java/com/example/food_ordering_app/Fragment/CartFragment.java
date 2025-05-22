@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.example.food_ordering_app.CongratsBottomSheet;
 import com.example.food_ordering_app.PayOutActivity;
 import com.example.food_ordering_app.R;
 import com.example.food_ordering_app.adapter.CartAdapter;
@@ -45,6 +46,7 @@ public class CartFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         return binding.getRoot();
     }
 
