@@ -67,7 +67,7 @@ public class SearchFragment extends Fragment {
                 R.drawable.menu5
         )));
 
-        adapter = new MenuAdapter(filteredMenuFoodName, filteredMenuItemPrice, filteredMenuImage);
+        adapter = new MenuAdapter(requireContext(),filteredMenuFoodName, filteredMenuItemPrice, filteredMenuImage);
         binding.menuRecyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         binding.menuRecyclerView.setAdapter(adapter);
 

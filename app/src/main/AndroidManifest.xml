@@ -13,9 +13,11 @@
         android:theme="@style/Theme.Food_Ordering_App"
         tools:targetApi="31">
         <activity
-            android:name=".PayOutActivity"
+            android:name=".DetailsActivity"
             android:exported="false" />
-        <!-- Splash Screen Activity (Main Entry Point) -->
+        <activity
+            android:name=".PayOutActivity"
+            android:exported="false" /> <!-- Splash Screen Activity (Main Entry Point) -->
         <activity
             android:name=".SplashScreen"
             android:exported="true">
